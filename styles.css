@@ -304,6 +304,7 @@ img {
 
 .contact-details:hover {
   transform: translateY(8px);
+  color: chartreuse;
 }
 
 /* Footer */
@@ -330,4 +331,16 @@ footer i {
     flex-direction: column;
     text-align: center;
   }
+}
+/*additional mods hover bottom ss */
+.ty:hover {
+  color: #62ff00;
+  transform: translateY(8px);
+  cursor:grabbing;
+}
+
+.team:hover {
+color: #e2f94e;
+cursor: wait;
+
 }
