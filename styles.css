@@ -332,7 +332,7 @@ footer i {
     text-align: center;
   }
 }
-/*additional mods hover bottom ss */
+/*additional mods:footer&header */
 .ty:hover {
   color: #62ff00;
   transform: translateY(8px);
@@ -342,5 +342,4 @@ footer i {
 .team:hover {
 color: #e2f94e;
 cursor: wait;
-
 }
