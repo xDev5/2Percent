@@ -395,18 +395,16 @@ cursor: wait;
 .anti {
   background-color: blue;
   border: solid 5px rgb(255, 34, 34);
- 
   text-align: center;
-  padding: 18px;
-  margin-right: 1550px;
-  margin-bottom: 350px;
-
-  rotate: 0deg;
-  text-decoration: underline;
+  text-decoration: overline underline;
+  text-decoration-style: wavy;
+  padding:10px ;
   color: rgb(253, 102, 228);
   animation-name: a;
   animation-duration: 18s;
   animation-iteration-count: infinite;
+    
+
  
 
 }
@@ -429,11 +427,11 @@ cursor: wait;
   top: 0;
   left: 0;
   transition: transform 1s;
- 
-  background-image:  linear-gradient(74deg, #ff0000, #c68eff 50% ,rgb(128, 0, 0),rgb(255, 255, 35) );
+ border: solid .5px #a516a0;
+  background-image:  linear-gradient(74deg, #ff0f0f 50%, #c68eff 50% /*,rgb(128, 0, 0),rgb(255, 255, 35) */);
 
 }
 
 .colors{
-animation: rainbow 5s infinite linear;
+animation: rainbow 19s infinite linear;
 }
