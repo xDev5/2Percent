@@ -2,9 +2,14 @@
   <head>
     <link rel="stylesheet" href="styles.css">
    <title>#MaXmindset</title>
-   <link rel="mx.jpg" href="favicon.ico" type="image/x-icon">
+   <link rel="mx.jpg" href="" type="image/x-icon">
    <meta name="thumbnail" content=/> <!--- android thumbnail --->
-
+   <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+   
 </head>
 
 <nav id="navbar" class="nav">
@@ -18,18 +23,23 @@
       <li>
         <a href="#contact">Contact</a>
       </li>
-    </ul>
+    </ul>s
     </nav>
-
+    <div id="gotUrBall" class="ball" style="transform: translateY(183px) translateX(88px);"></div>
+    <script> var f = document.getElementById('gotUrBall');
+      document.addEventListener('click', function(ev){
+        f.style.transform = 'translateY('+(ev.clientY-25)+'px)';
+        f.style.transform += 'translateX('+(ev.clientX-25)+'px)';
+      },false);</script>
     <!--yum notes i love notes-->  
 
     <section id="welcome-section" class="welcome-section">
- <ul>About 3 months ago I decided I wanted to merge my passions, through webdev. I decided that development within myself, 
+ <ul style="padding:8%" >About 3 months ago I decided I wanted to merge my passions, through webdev. I decided that development within myself, 
   and on the screen would lead to my dreams coming true. In 10 days time, I had taught myself html and css, to a point where i felt comfortable in 
   moving on to JavaScript. I now question life daily. </ul>
       
          <h1>I AM <i class="ty">xDev5</i></h1>
-        <p>DevOps Obtained</p>
+        <p class="colors" >DevOps Obtained</p>
       </section>
 
       <!-- who else loves goooood notes? -->
@@ -38,7 +48,8 @@
         <h1>I AM xDev5</h1>
         <p>Presenting The Foundation & Certification</p>
       </section>
-
+    
+    
       <!---whats ur fav flav?-->
       
 
@@ -113,7 +124,7 @@
         </a>
       </div>
       <a
-      href=""
+      href="https://jsfiddle.net/user/xGoodfella/fiddles/"
       class="btn btn-show-all"
       target="_blank"
       >Show all<i class="fas fa-chevron-right"></i
@@ -123,8 +134,9 @@
         <!--mine is plain good notes-->
         
           <section id="contact" class="contact-section">
+        <div class="anti" >🤢</div>  
           <div class="contact-section-header">
-            <h2 class="team" >Let's Build a Team.</h2>
+            <h2 class="rain" >Let's Build a Team.</h2>
             <p>I dont serve coffee anymore</p>
           </div>
           <div class="contact-links">
@@ -132,7 +144,7 @@
               href="https://remoteok.com/@composedpassion"
               target="_blank"
               class="btn contact-details"
-              ><i class="fab fa-facebook-square"></i> Remote only </a
+              ><i class="fab fa-facebook-squarex"></i> Remote only </a
             >
             <a
               id="profile-link"
@@ -164,8 +176,8 @@
           <p style="color:chartreuse" >
             &copy; xDev5
             <a class="ty" href="https://2percentpoker.wordpress.com/" target="_blank"
-              >inspiriation Meets evolution™ <i class="fab fa-free-code-camp"></i
-            ></a>
+              >inspiriation Meets evolution™ 
+            </a>
           </p>
         </footer>
     

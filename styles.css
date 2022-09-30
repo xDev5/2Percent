@@ -2,7 +2,7 @@
 :root {
   --main-white: #e8acdc;
   --main-red: #be3144;
-  --main-blue: #7795db;
+  --main-blue: #468df1;
   --main-gray: #000000;
 }
 
@@ -342,4 +342,98 @@ footer i {
 .team:hover {
 color: #e2f94e;
 cursor: wait;
+}
+
+
+.rain:hover {
+  animation: rainbow 5s infinite linear;
+}
+
+
+@keyframes rainbow {
+
+  0% {
+    color: rgb(255,0,0);
+  }
+
+  12% {
+    color: rgb(238,125,15);    
+  }
+
+  25% {
+    color: rgb(240,232,16);    
+  }
+  
+  37% {
+    color: rgb(70,240,16);    
+  }
+  
+  50% {
+    color: rgb(16,230,240);    
+  }
+  
+  62% {
+    color: rgb(16,85,240);    
+  }
+  
+  75% {
+    color: rgb(100,16,240);    
+  }
+  
+  87% {
+    color: rgb(220,16,240);    
+  }
+
+  100% {
+    color: rgb(255,0,0);
+  }
+
+}
+
+
+
+.anti {
+  background-color: blue;
+  border: solid 5px rgb(255, 34, 34);
+ 
+  text-align: center;
+  padding: 18px;
+  margin-right: 1550px;
+  margin-bottom: 350px;
+
+  rotate: 0deg;
+  text-decoration: underline;
+  color: rgb(253, 102, 228);
+  animation-name: a;
+  animation-duration: 18s;
+  animation-iteration-count: infinite;
+ 
+
+}
+
+@keyframes a {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} 
+
+.ball  {
+  border-radius: 30px;
+  width: 50px;
+  height: 50px;
+  background: #ff00af;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 1s;
+ 
+  background-image:  linear-gradient(74deg, #ff0000, #c68eff 50% ,rgb(128, 0, 0),rgb(255, 255, 35) );
+
+}
+
+.colors{
+animation: rainbow 5s infinite linear;
 }
