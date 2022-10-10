@@ -1,8 +1,8 @@
-/* Custom properties/variables *i cant take credit 4 this but have studied it. it has helped me greatly  */
+/* Custom properties/variables *heavily modified version of frrcode camps amazing portfolio website cert  */
 :root {
   --main-white: #e8acdc;
   --main-red: #be3144;
-  --main-blue: #468df1;
+  --main-blue: #4fb8bc9c;
   --main-gray: #000000;
 }
 
@@ -103,7 +103,22 @@ a {
 img {
   display: block;
   width: 100%;
+  
 }
+/*swc !!!!!!!%%%%!!!!!! addon*/
+
+
+  
+
+.swc{
+  display: flex;
+
+padding-left:40%;
+
+  
+}
+
+
 
 /* nav */
 
@@ -116,7 +131,7 @@ img {
   background: #000000;
   box-shadow: inset -11px 11px 0 rgb(0 0 0 / 40%);
   z-index: 10;
-  justify-content: flex-end;
+  flex-direction: row-reverse;
 }
 
 .nav-list {
@@ -170,7 +185,8 @@ img {
 .projects-section {
   text-align: center;
   padding: 10rem 2rem;
-  background: var(--main-blue);
+  background-image: linear-gradient(74deg, #78d97d 0%,  #edf640 50%,  #c68eff 100%);
+
 }
 
 .projects-section-header {
@@ -332,21 +348,103 @@ footer i {
     text-align: center;
   }
 }
-/*additional mods:footer&header */
+/* footer addional mod*/
 .ty:hover {
   color: #62ff00;
   transform: translateY(8px);
   cursor:grabbing;
 }
 
-.team:hover {
-color: #e2f94e;
-cursor: wait;
+.ball {
+  border-radius: 30px;
+  width: 50px;
+  height: 50px;
+  background: #ff00af;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 1s;
+  border: 10px solid rgb(165, 63, 255);
 }
 
 
-.rain:hover {
-  animation: rainbow 5s infinite linear;
+.theBallsBox{
+
+ background-image:  linear-gradient(74deg, #173018, #c68eff 50% ,purple,yellow );
+ padding: 350px;
+ overflow: auto;
+ resize: both;
+ 
+}
+
+
+
+
+.anti {
+  background-color: blue;
+  border: solid 1.5px rgb(255, 34, 34);
+ 
+  text-align: center;
+  padding: 2px;
+  margin-left: 50px;
+  margin-top: 0px;
+   position:static;
+  rotate: 0deg;
+  text-decoration: underline;
+  color: rgb(253, 102, 228);
+  animation-name: a;
+  animation-duration: 18s;
+  animation-iteration-count: infinite;
+ }
+
+
+@keyframes a {
+
+  0%,
+  100% {
+    transform: translateX(0%);
+    transform-origin: 50% 50%;
+  }
+
+  15% {
+    transform: translateX(-30px) rotate(-6deg);
+  }
+
+  30% {
+    transform: translateX(15px) rotate(6deg);
+  }
+
+  45% {
+    transform: translateX(-15px) rotate(-3.6deg);
+  }
+
+  60% {
+    transform: translateX(9px) rotate(2.4deg);
+  }
+
+  75% {
+    transform: translateX(-6px) rotate(-1.2deg);
+  }
+} 
+
+
+@keyframes a {
+   0% {
+     transform: rotate(0deg);
+   }
+   100% {
+     transform: rotate(360deg);
+   }
+} 
+
+
+.rain {
+  animation: rainbow 20s infinite linear;
+}
+
+.colors:hover {
+  animation: rainbow 20s infinite linear;
+
 }
 
 
@@ -391,47 +489,82 @@ cursor: wait;
 }
 
 
-
-.anti {
-  background-color: blue;
-  border: solid 5px rgb(255, 34, 34);
-  text-align: center;
-  text-decoration: overline underline;
-  text-decoration-style: wavy;
-  padding:10px ;
-  color: rgb(253, 102, 228);
-  animation-name: a;
-  animation-duration: 18s;
-  animation-iteration-count: infinite;
-    
-
- 
-
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@keyframes a {
-  0% {
-    transform: rotate(0deg);
+body {
+  height: 100vh;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  background-color: #000000;
+  display: grid;
+  place-items: center;
+}
+.glitch {
+  font-size: 6rem;
+  color: #ffffff;
+  letter-spacing: 0.6rem;
+  animation: glitch 0.2s infinite forwards;
+  animation-direction: alternate-reverse;
+  position: relative;
+  user-select: none;
+}
+
+.glitch::before {
+  content: "";
+  position: asolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  animation: glitch1 0.1s infinite forwards;
+  animation-direction: alternate-reverse;
+  text-shadow: none;
+}
+.glitch::after {
+  content: "xDev5";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  animation: glitch2 0.1s infinite forwards;
+  animation-direction: alternate-reverse;
+  text-shadow: none;
+}
+
+@keyframes glitch {
+  60% {
+    text-shadow: 9px 0 #00ffff, -9px 0 #ff01ae;
+  }
+  80% {
+    text-shadow: 0 12px #ff01ae, 0 -12px #00ffff;
   }
   100% {
-    transform: rotate(360deg);
+    text-shadow: 9px 0 #00ffff, -9px 0 #ff01ae;
   }
-} 
-
-.ball  {
-  border-radius: 30px;
-  width: 50px;
-  height: 50px;
-  background: #ff00af;
-  position: absolute;
-  top: 0;
-  left: 0;
-  transition: transform 1s;
- border: solid .5px #a516a0;
-  background-image:  linear-gradient(74deg, #ff0f0f 50%, #c68eff 50% /*,rgb(128, 0, 0),rgb(255, 255, 35) */);
-
 }
 
-.colors{
-animation: rainbow 19s infinite linear;
+@keyframes glitch1 {
+  to {
+    transform: translate(-30px, -50%);
+    opacity: 0;
+  }
 }
+
+@keyframes glitch2 {
+  to {
+    transform: translate(30px, -50%);
+    opacity: 0;
+  }
+}
+
+
