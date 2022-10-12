@@ -512,7 +512,7 @@ body {
 }
 .glitch {
   font-size: 6rem;
-  color: #ffffff;
+  color: #fd1fe75b;
   letter-spacing: 0.6rem;
   animation: glitch 0.2s infinite forwards;
   animation-direction: alternate-reverse;
@@ -521,14 +521,14 @@ body {
 }
 
 .glitch::before {
-  content: "";
+  content: "Hello EverRiSe";
   position: asolute;
   top: 50%;
   right: 0;
   transform: translateY(-50%);
-  animation: glitch1 0.1s infinite forwards;
+  animation: glitch1 1.2s infinite forwards;
   animation-direction: alternate-reverse;
-  text-shadow: none;
+  text-shadow: #5df300;
 }
 .glitch::after {
   content: "xDev5";
@@ -536,14 +536,14 @@ body {
   top: 50%;
   left: 0;
   transform: translateY(-50%);
-  animation: glitch2 0.1s infinite forwards;
+  animation: glitch2 0.3s infinite forwards;
   animation-direction: alternate-reverse;
   text-shadow: none;
 }
 
 @keyframes glitch {
-  60% {
-    text-shadow: 9px 0 #00ffff, -9px 0 #ff01ae;
+  20% {
+    text-shadow: 3px 0 #00ffff, 5px 10px #ff01ae;
   }
   80% {
     text-shadow: 0 12px #ff01ae, 0 -12px #00ffff;
@@ -564,7 +564,6 @@ body {
   to {
     transform: translate(30px, -50%);
     opacity: 0;
+    
   }
 }
-
-
