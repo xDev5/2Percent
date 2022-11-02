@@ -525,7 +525,7 @@ body {
 }
 
 .glitch::before {
-  content: "Hello EverRiSe";
+  content: "ViSion";
   position: asolute;
   top: 50%;
   right: 0;
@@ -535,7 +535,7 @@ body {
   text-shadow: #5df300;
 }
 .glitch::after {
-  content: "Revering";
+  content: "SteadyReady";
   position: absolute;
   top: 50%;
   left: 0;
