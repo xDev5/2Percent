@@ -183,14 +183,6 @@ padding-left:40%;
 /* drop down fold animation */
 
 
-html {
-  background: #fff;
-}
-
-*, html, body {
-  font-family: Montserrat;
-  color:#fff;
-}
 
 ul, li {
   margin: 0;
@@ -216,7 +208,7 @@ ul, li {
   width: 0; 
   height: 0; 
   border-left: 20px solid transparent; 
-  border-top: 39px solid #f19144; 
+  border-top: 39px solid #00bbff; 
 }
 .signup-container:after {
   content:"";
@@ -226,19 +218,19 @@ ul, li {
   width: 0; 
   height: 0; 
   border-right: 20px solid transparent; 
-  border-bottom: 39px solid #f19144; 
+  border-bottom: 39px solid #00c975; 
 }
 
 .signupAd {
-  background: #f19144;
-  float: left;
-  width:210px;
+  background: #0b7af9;
+  
+  width:231px;
   padding: 10px;
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -ms-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .headline  {
@@ -254,7 +246,7 @@ ul, li {
 
 .signup-list li {
   cursor: pointer;
-  background: #f19144;
+  background: #bbff00;
   padding: 15px 10px;
 }
 
@@ -295,7 +287,7 @@ ul, li {
 }
 
 .signup-list .third {
-  background: #de5b02;
+  background: #1bb7ff;
   -webkit-transition: 0.2s linear 0.4s;
   -o-transition: 0.2s linear 0.4s;
   transition: 0.2s linear 0.4s;
