@@ -180,6 +180,162 @@ padding-left:40%;
   color: #765cff;
 }
 
+/* drop down fold animation */
+
+
+html {
+  background: #fff;
+}
+
+*, html, body {
+  font-family: Montserrat;
+  color:#fff;
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.container {
+  margin: 40px auto 0;
+  width: 250px;
+}
+
+.signup-container {
+  position: relative;
+  width: 250px;
+  float: left;
+}
+.signup-container:before {
+  content:"";
+  position:absolute;
+  top:0;
+  left: -20px;
+  width: 0; 
+  height: 0; 
+  border-left: 20px solid transparent; 
+  border-top: 39px solid #f19144; 
+}
+.signup-container:after {
+  content:"";
+  position:absolute;
+  top:0;
+  left: 230px;
+  width: 0; 
+  height: 0; 
+  border-right: 20px solid transparent; 
+  border-bottom: 39px solid #f19144; 
+}
+
+.signupAd {
+  background: #f19144;
+  float: left;
+  width:210px;
+  padding: 10px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.headline  {
+  display: block;
+}
+.signup-list {
+  overflow: hidden;
+  width: 100%;
+  box-sizing: border-box;
+  color: rgb
+  font-size: 13px;
+}
+
+.signup-list li {
+  cursor: pointer;
+  background: #f19144;
+  padding: 15px 10px;
+}
+
+.signup-list li:last-child {  
+  border-radius: 0 0 0px 0px;
+}
+
+.signup-list li [class^="icon-"] {
+  margin: 0 3px 0 0;
+}
+
+
+.signup-list .signupAd {
+  position: relative;
+}
+
+.signup-list li {
+  -webkit-transform-origin: 50% 0%;
+  -o-transform-origin: 50% 0%;
+  transform-origin: 50% 0%;
+  -webkit-transform: perspective(250px) rotateX(-90deg);
+  -o-transform: perspective(250px) rotateX(-90deg);
+  transform: perspective(250px) rotateX(-90deg);
+  -moz-box-shadow: 0px 2px 10px rgba(0,0,0,0.05);
+}
+
+.signup-list .first {
+  background: #de5b02;
+  -webkit-transition: 0.2s linear 0.8s;
+  -o-transition: 0.2s linear 0.8s;
+  transition: 0.2s linear 0.8s;
+}
+
+.signup-list .second {
+  -webkit-transition: 0.2s linear 0.6s;
+  -o-transition: 0.2s linear 0.6s;
+  transition: 0.2s linear 0.6s;
+}
+
+.signup-list .third {
+  background: #de5b02;
+  -webkit-transition: 0.2s linear 0.4s;
+  -o-transition: 0.2s linear 0.4s;
+  transition: 0.2s linear 0.4s;
+}
+
+.signup-list .fourth {
+  -webkit-transition: 0.2s linear 0.2s;
+  -o-transition: 0.2s linear 0.2s;
+  transition: 0.2s linear 0.2s;
+}
+
+.signup-container:hover .signup-list li {
+  -webkit-transform: perspective(350px) rotateX(0deg);
+  -o-transform: perspective(350px) rotateX(0deg);
+  transform: perspective(350px) rotateX(0deg);
+  -webkit-transition: 0.2s linear 0s;
+  -o-transition: 0.2s linear 0s;
+  transition: 0.2s linear 0s;
+}
+
+.signup-container:hover .signup-list .second {
+  -webkit-transition-delay: 0.2s;
+  -o-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+
+.signup-container:hover .signup-list .third {
+  -webkit-transition-delay: 0.4s;
+  -o-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+}
+
+.signup-container:hover .signup-list .fourth {
+  transition-delay: 0.6s;
+  -o-transition-delay: 0.6s;
+  transition-delay: 0.6s;
+} 
+/* drop down fold animation ends */
+
+
 /* Projects section */
 
 .projects-section {
